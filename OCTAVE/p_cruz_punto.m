@@ -1,4 +1,4 @@
-# PROGRAMA PRODUCTO CRUZ/PUNTO
+# PROGRAMA PRODUCTO CRUZ/PUNTO 3D
 # Encuentra el Producto Cruz o Producto Punto de dos vectores.
 # Funcionamiento:
 # 1) Pregunta componentes x , y & z del Vector 1 y lo almacena en cadena L1
@@ -7,7 +7,7 @@
 # 3) Muestra el Resultado Producto cruz almacenado en cadena L3. 
 # 4) Muestra el Resultado Producto Punto almacenado en S y el Angulo entre V1 y V2.
 
-disp("PRODUCTO CRUZ/PUNTO")
+disp("PRODUCTO CRUZ/PUNTO 3D")
 
 L1 = zeros(1,3); %Vector 1
 L2 = zeros(1,3); %Vector 2
