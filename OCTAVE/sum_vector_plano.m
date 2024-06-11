@@ -9,7 +9,7 @@
 # 6) Muestra la Matriz A con las Componentes x & y de todos los vectores.
 # 7) Muestra la Sumatoria de las Componentes x & y, almacenado en L1.
 # 8) Muestra La magnitud "R" del vector Resultado.
-# 9) Muestra el Angulo "G "respecto al eje x del vector resultado
+# 9) Muestra el Angulo "G" respecto al eje x del vector resultado
 
 disp("SUMATORIA VECTORES")
 disp("NUMERO DE VECTORES")
