@@ -38,7 +38,7 @@ for F = 1:N
   O = ans;
   
   disp(" ")
-  disp("MINIMO ANGULO AL EJE DE REFERENCIA")
+  disp("MINIMO ANGULO AL EJE DE REFERENCIA GRADOS")
   input("?  ")
   T = ans*pi/180;
   
