@@ -17,11 +17,11 @@ PRODUCTO CRUZ FUNCIONAMIENTO
 	* Haciendo el producto cruz V1 X V2 
 	
 		A X B = [	ax		ay		az	]
-				[	Ax		Ay		Az	]
-				[	Bx		By		Bz	]
+			[	Ax		Ay		Az	]
+			[	Bx		By		Bz	]
 				
 		A X B =  ax [ Ay Az ] - ay [ Ax	Az ] + az [ Ax	Ay ] 
-					[ By Bz ]	   [ Bx	Bz ]	  [ Bx	By ]
+			    [ By Bz ]	   [ Bx	Bz ]	  [ Bx	By ]
 				 
 		A X B = ax (Ay * Bz - Az * By) - ay ( Ax * Bz - Az * Bx) + az ( Ax * By - Ay * Bx )
 	
@@ -31,7 +31,7 @@ PRODUCTO CRUZ FUNCIONAMIENTO
 	
 		A X B = ax[ L1(2)*L2(3) - L1(3)*L2(2) ] + ay[ L1(3)*L2(1) - L1(1)*L2(3) ] +
 		
-				az[ L1(1)*L2(2) - L1(2)*L2(1) ]
+			az[ L1(1)*L2(2) - L1(2)*L2(1) ]
 			
 		El resultado se alamcena en otro vector L3
 	
@@ -48,11 +48,11 @@ PRODUCTO CRUZ FUNCIONAMIENTO
 	* Haciendo el producto cruz V2 X V1 
 	
 		B X A = [	ax		ay		az	]
-				[	BX		By		Bz	]
-				[	Ax		Ay		Az	]
+			[	BX		By		Bz	]
+			[	Ax		Ay		Az	]
 				
 		B X A =  ax [ By Bz ] - ay [ Bx	Bz ] + az [ Bx	By ] 
-					[ Ay Az ]	   [ Ax	Az ]	  [ Ax	Ay ]
+			    [ Ay Az ]	   [ Ax	Az ]	  [ Ax	Ay ]
 				 
 		B X A = ax (By * Az - Bz * Ay) - ay ( Bx * Az - Bz * Ax) + az ( Bx * Ay - By * Ax )
 	
@@ -62,7 +62,7 @@ PRODUCTO CRUZ FUNCIONAMIENTO
 	
 		A X B = ax[ L2(2)*L1(3) - L2(3)*L1(2) ] + ay[ L2(3)*L1(1) - L2(1)*L1(3) ] +
 		
-				az[ L2(1)*L1(2) - L2(2)*L1(1) ]
+			az[ L2(1)*L1(2) - L2(2)*L1(1) ]
 				
 		El resultado se alamcena en otro vector L3
 	
