@@ -1,7 +1,15 @@
 # SUMATORIA VECTORES EN EL PLANO
-# el programa ecuentra las componentes x & y de un vector 
-# en el plano conociendo su magnitud, y el minimo angulo 
-# respecto a un eje de referencia y su sentido de rotacion.
+# Encuentra componentes x & y de N vectores en el Plano y realiza la Sumatoria Vector Resultante. 
+# Funcionamiento:
+# 1) Pregunta el Numero de Vectores, pregunta los datos de cada vector.
+# 2) Pregunta La Magnitud del Vector.
+# 3) Pregunta el Eje de Referencia.
+# 4) Pregunta el Sentido Rotacion del angulo.
+# 5) Pregunta el Valor del Angulo en Grados respecto al eje de referencia (Menor o igual a 90)
+# 6) Muestra la Matriz A con las Componentes x & y de todos los vectores.
+# 7) Muestra la Sumatoria de las Componentes x & y, almacenado en L1.
+# 8) Muestra La magnitud "R" del vector Resultado.
+# 9) Muestra el Angulo "G "respecto al eje x del vector resultado
 
 disp("SUMATORIA VECTORES")
 disp("NUMERO DE VECTORES")
