@@ -1,0 +1,23 @@
+PRODUCTO PUNTO FUNCIONAMIENTO
+	
+	* Se almacena el Vector 1 en Lista L1
+		A -> L1[ Ax , Ay , Az ]
+		
+			Ax = L1(1)
+			Ay = L1(2)
+			Az = L1(3)
+	
+	* Se almacena el Vector 2 en Lista L2
+		B -> L2[ Bx , By , Bz ]
+		
+			Bx = L2(1)
+			By = L2(2)
+			Bz = L2(3)
+		
+	* Haciendo el producto punto A . B 
+		
+		A . B = Ax*Bx + Ay*By + Az*Bz
+		
+		Sustituyendo
+		
+		A . B = L1(1)*L2(1) + L1(2)*L2(2) + L1(3)*L2(3)

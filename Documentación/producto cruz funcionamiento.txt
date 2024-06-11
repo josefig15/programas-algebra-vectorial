@@ -1,0 +1,75 @@
+PRODUCTO CRUZ FUNCIONAMIENTO
+
+	* Se almacena el Vector 1 en Lista L1
+		A -> L1[ Ax , Ay , Az ]
+		
+			Ax = L1(1)
+			Ay = L1(2)
+			Az = L1(3)
+	
+	* Se almacena el Vector 2 en Lista L2
+		B -> L2[ Bx , By , Bz ]
+		
+			Bx = L2(1)
+			By = L2(2)
+			Bz = L2(3)
+		
+	* Haciendo el producto cruz V1 X V2 
+	
+		A X B = [	ax		ay		az	]
+				[	Ax		Ay		Az	]
+				[	Bx		By		Bz	]
+				
+		A X B =  ax [ Ay Az ] - ay [ Ax	Az ] + az [ Ax	Ay ] 
+					[ By Bz ]	   [ Bx	Bz ]	  [ Bx	By ]
+				 
+		A X B = ax (Ay * Bz - Az * By) - ay ( Ax * Bz - Az * Bx) + az ( Ax * By - Ay * Bx )
+	
+		A X B = ax (Ay * Bz - Az * By) + ay ( Az * Bx - Ax * Bz) + az ( Ax * By - Ay * Bx )
+	
+		Sustituyendo:
+	
+		A X B = ax[ L1(2)*L2(3) - L1(3)*L2(2) ] + ay[ L1(3)*L2(1) - L1(1)*L2(3) ] +
+		
+				az[ L1(1)*L2(2) - L1(2)*L2(1) ]
+			
+		El resultado se alamcena en otro vector L3
+	
+		A X B -> L3
+		
+		L3(1) = L1(2)*L2(3) - L1(3)*L2(2)
+		
+		L3(2) = L1(3)*L2(1) - L1(1)*L2(3)
+		
+		L3(3) = L1(1)*L2(2) - L1(2)*L2(1)
+		
+	
+	
+	* Haciendo el producto cruz V2 X V1 
+	
+		B X A = [	ax		ay		az	]
+				[	BX		By		Bz	]
+				[	Ax		Ay		Az	]
+				
+		B X A =  ax [ By Bz ] - ay [ Bx	Bz ] + az [ Bx	By ] 
+					[ Ay Az ]	   [ Ax	Az ]	  [ Ax	Ay ]
+				 
+		B X A = ax (By * Az - Bz * Ay) - ay ( Bx * Az - Bz * Ax) + az ( Bx * Ay - By * Ax )
+	
+		B X A = ax (By * Az - Bz * Ay) + ay ( Bz * Ax - Bx * Az) + az ( Bx * Ay - By * Ax )
+	
+		Sustituyendo:
+	
+		A X B = ax[ L2(2)*L1(3) - L2(3)*L1(2) ] + ay[ L2(3)*L1(1) - L2(1)*L1(3) ] +
+		
+				az[ L2(1)*L1(2) - L2(2)*L1(1) ]
+				
+		El resultado se alamcena en otro vector L3
+	
+		B X A -> L3
+		
+		L3(1) = L2(2)*L1(3) - L2(3)*L1(2)
+		
+		L3(2) = L2(3)*L1(1) - L2(1)*L1(3)
+		
+		L3(3) = L2(1)*L1(2) - L2(2)*L1(1)

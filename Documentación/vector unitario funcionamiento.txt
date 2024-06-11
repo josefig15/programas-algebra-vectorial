@@ -1,0 +1,36 @@
+VECTOR UNITARIO FUNCIONAMIENTO
+
+	* Se almacena el Vector de Ingreso en Lista L1
+		A -> L1[ Ax , Ay , Az ]
+		
+			Ax = L1(1)
+			Ay = L1(2)
+			Az = L1(3)
+	
+	* Se almacena el Vector unitario en Lista L2
+		B = L2[ Bx , By , Bz ]
+		
+			Bx = L2(1)
+			By = L2(2)
+			Bz = L2(3)
+	
+	* El vector Unitario se Calcula:	
+		a = A / √(Ax^2 + Ay^2 +Az^2) 
+	
+	* Se encuentra la Magnitud vector L1
+		M = √(Ax^2 + Ay^2 + Az^2)
+		
+	* Se Divide cada Componente del vector entre la Magnitud.
+
+		
+		B = (Ax + Ay + Az)/M
+		
+			Bx = Ax/M
+			By = Ay/M
+			Bz = Az/M
+	
+		Sustituyendo Por las Posisciones correspondientes:
+		
+			L2(1) = L1(1)/M
+			L2(2) = L2(2)/M
+			L2(3) = L1(3)/M

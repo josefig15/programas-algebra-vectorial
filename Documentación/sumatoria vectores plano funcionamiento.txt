@@ -1,0 +1,114 @@
+FUNCIONAMIENTO SUMATORIA VECTORES EN EL PLANO
+
+PLANO CARTESIANO
+					(2)
+					y 
+	II Cuadrante	|		I Cuadrante
+	(-x , y )		|		( x , y )
+					|
+					|
+					|
+  (3)				|				(1)
+  -x _ _ _ _ _ _ _ _|_ _ _ _ _ _ _ _ x 
+					|
+					|
+					|
+	III Cuadrante	|		IV Cuadrante
+	(-x , -y )		|		( x , -y )
+					|
+					-y
+					(4)
+
+	
+	
+	* Un Vector se puede Describir con su Magnitud y un angulo respecto a un Eje de Referencia.
+		
+		- La Variable "M" almacena el valor de la Magnitud.
+		- La Variable "T" almacena el vlaor Agulo Theta.
+		- El Angulo Puede ser en Sentido Anti-Horario o Horario
+		- El angulo tiene que ser menor o igual que 90° para que las componentes se mantengan dentro del cuadrante. 
+	
+	
+	* EJES DE REFERENCIA DE LOS ANGULOS
+		
+		- La variable "E" Indica el eje de Referencia.
+	
+		1) x	-> (E = 1) Referencia Eje x Positivo 
+		2) y	-> (E = 2) Referencia Eje y Positivo
+		3)-x	-> (E = 3) Referencia Eje x Negatvo
+		4)-y	-> (E = 4) Referencia Eje x Negativo.
+	
+	* SENTIDO ROTACION DE LOS ANGULOS
+		
+		- La Variable "O" Indica el sentido de Rotacion.
+		
+		1) Anti-Horario -> O = 1
+		2) Horario		-> O = 2
+		
+	
+	* SIGNOS DE LAS COMPONENTES SEGUN EL CUADRANTE.
+		
+		- La variable "I" Indica el Signo Componente X.
+		- LA variable "J" Indica el Signo Componente Y.
+		
+		I	Cuadrante -> I =  1 ; J =  1
+		II	Cuadrante -> I = -1 ; J =  1
+		III	Cuadrante -> I = -1 ; J = -1
+		IV	Cuadrante -> I =  1 ; J = -1
+		
+			
+	* ASIGNACION DE SIGNOS SEGUN EJE DE REFERENCIA Y EL SENTIDO DE ROTACION
+		
+		- Vector dentro del I Cuadrante 
+		
+			Condiciones:
+				Eje de Referencia Eje x (E = 1) y Sentido Anti-Horario (O = 1)
+				Eje de Referencia Eje y (E = 2) y Sentido Horario (O = 2)
+			
+			Signos de las componentes:
+				I = 1
+				J = 1
+				
+		- Vector dentro del II Cuadrante 
+			
+			Condiciones:
+				Eje de Referencia Eje -x (E = 3) y Sentido Horario (O = 2)
+				Eje de Referencia Eje  y (E = 2) y Sentido Anti-Horario (O = 1)
+			
+			Signos de las componentes:
+				I = -1
+				J = 1
+		
+		- Vector dentro del III Cuadrante 
+		
+			Condiciones:
+				Eje de Referencia Eje -x (E = 3) y Sentido Anti-Horario (O = 1)
+				Eje de Referencia Eje -y (E = 4) y Sentido Horario (O = 2)
+			
+			Signos de las componentes:
+				I = -1
+				J = -1
+				
+		- Vector dentro del IV Cuadrante 
+		
+			Condiciones:
+				Eje de Referencia Eje  x (E = 1) y Sentido Horario (O = 2)
+				Eje de Referencia Eje -y (E = 4) y Sentido Anti-Horario (O = 1)
+			
+			Signos de las componentes:
+				I = -1
+				J = -1
+				
+	* CALCULO DE COMPONENTES 
+	
+		- Referencia Eje x o Eje -x ( E = 1 OR E = 3 )
+		
+			X = M * Cos(T) * I -> Componente Horizontal.
+			Y = M * Sin(T) * J -> Componente Vertical.
+		
+		- REferencia Eje y o Eje -y ( E = 2 OR E = 4 )
+			
+			X = M * Sin(T) * I -> Componente Horizontal.
+			Y = M * Cos(T) * J -> Componente Vertical.
+				
+				
