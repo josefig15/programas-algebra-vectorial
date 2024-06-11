@@ -1,7 +1,7 @@
 # PROGRAMA PRODUCTO CRUZ/PUNTO
 # Encuentra el Producto Cruz o Producto Punto de dos vectores.
 # Funcionamiento:
-# 1) Pregunta componentes x , y & z del Vector 1 y lo almacena en cadena L2
+# 1) Pregunta componentes x , y & z del Vector 1 y lo almacena en cadena L1
 # 2) Pregunta componentes x , y & z del Vector 2 y lo almacena en cadena L2    
 # 2) Pregnta el tipo operacion: 1) V1 X V2 , 2) V1 . V2
 # 3) Muestra el Resultado Producto cruz almacenado en cadena L3. 
