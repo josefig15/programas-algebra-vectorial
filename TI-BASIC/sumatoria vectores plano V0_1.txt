@@ -1,0 +1,106 @@
+
+// N -> Numero de Vectores
+// M -> Magnitud
+// T -> Angulo Theta
+// X -> Componente X
+// Y -> Componente Y
+// I -> Signo Componente X
+// J -> Signo Componente Y
+
+
+:Disp "SUM VECTOR"
+:Disp "NUM VECTOR?"
+:Input N
+
+:{N,2} -> Dim([A])
+:{2} -> Dim(L1)
+
+
+: 0 -> A
+: 0 -> B
+:For(F, 1 ,N)
+	:Disp "VCTR NUM",F
+	:Disp "MGNTD?"
+	:Input M
+
+	:Disp "EJE REF ?"
+	:Disp "1) X"		// Referencia Eje X positivo
+	:Disp "1) Y"		// Referencia Eje Y positivo
+	:Disp "3)-X"		// Referencia Eje X Negativo
+	:Disp "4)-Y"		// Referencia Eje Y Negativo
+	:Input E
+			
+	:Disp "SENTIDO ?"
+	:Disp "1) ANTI-HOR"
+	:Disp "2) HORARIO"
+	:Input O
+	
+	:Disp "ANGULO ?"
+	:Input T
+	
+	:If T > 90
+	:Then
+		:Disp "ANG > 90"
+		:Stop
+	:End
+	
+	// Primer Cuadrante
+	:If E = 1 AND O = 1 OR E = 2 AND O = 2 
+	:Then
+		:1 -> I			// Signo Componente X Positivo	
+		:1 -> J			// Signo Componente Y Positivo
+	:End
+	
+	// Segundo Cuadrante
+	:If E = 3 AND O = 2 OR E = 2 OR O = 1
+	:Then
+		:-1 -> I		// Signo Componente X Negativo
+		:1 -> J			// Signo Componente Y Positivo
+	:End
+	
+	// Tercer Cuadrante
+	:If E = 3 AND O = 1 OR E = 4 OR O = 2
+	:Then
+		:-1 -> I		// Signo Componente X Negativo
+		:-1 -> J		// Signo Componente Y Negativo
+	:End
+	
+	// Cuarto Cuadrante
+	:If E = 1 AND O = 2 OR E = 4 OR O = 1
+	:Then
+		:1 -> I			// Signo Componente X Positivo
+		:-1 -> J		// Signo Componente Y Negativo
+	:End
+	
+	// Eje Horizontal x & -x
+	:If E = 1 OR E = 3
+	:Then
+		:M*cos(T)*I -> X
+		:M*sen(T)*J -> Y
+	:End
+	// Eje Vertical y & - y
+	:If E = 2 OR E = 4
+	:Then
+		:M*sen(T)*I -> X
+		:M*cos(T)*J -> Y
+	:End
+	
+	:X -> [A](F,1)
+	:Y -> [A](F,2)
+	
+	:A + X -> A 	// Sumatoria Componentes en X
+	:B + Y -> B		// Sumatoria Componentes en Y
+:End
+
+:A -> L1(1)
+:B -> L1(2)
+
+:√(A^2 + B^2)-> R	// Magnitud
+:tan^-1(B/A) -> G   // Angulo Resultado
+
+:Disp "RESULTADO"
+:Disp L1
+:Disp "MAGNITUD"
+:Disp R
+:Disp "ANGULO"
+:Disp G

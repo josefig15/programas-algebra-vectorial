@@ -1,0 +1,32 @@
+// Nombre Programa: VUNITMAG
+
+:Disp "V.UNITARIO"
+:Disp "a = A/|A|"
+
+:{3} -> Dim(L1)	// Vector Ingreso
+:{3} -> Dim(L2) // Vector Resultado
+
+// Ingreso de Componentes
+:0 -> A 	
+:For(N , 1 , 3)
+	:If N = 1
+		:Disp "X?"
+	:If N = 2
+		:Disp "Y?"
+	:If N = 3
+		:Disp "Z?"
+	:Input C 
+	:C -> L1(N)
+	:A + C^2 -> A
+:End
+ 
+// Calculo Vector Unitario
+:√(A) -> A;
+
+:For(N , 1 , 3)
+	:L1(N)/A -> L2(N)
+:End
+:Disp "MAGNITUD"
+:Disp A
+:Disp "RESULTADO"
+:Disp L2
