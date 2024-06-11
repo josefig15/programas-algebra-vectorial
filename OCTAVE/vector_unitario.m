@@ -1,3 +1,10 @@
+# PROGRAMA VECTOR UNITARIO
+# Encuentra la Magnitud de un Vector y su vector Unitario.
+# Funcionamiento:
+# 1) Pregunta componentes x , y & z del Vector 1 y lo almacena en cadena L1   
+# 2) Muestra La Magnitud del Vector 1 Almcenado en "A". 
+# 3) Muestra el vector Unitario almacenado en cadena L2.
+
 disp("VECTOR UNITARIO")
 
 L1 = zeros(1,3);
