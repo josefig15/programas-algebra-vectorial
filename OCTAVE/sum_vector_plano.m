@@ -1,5 +1,5 @@
 # SUMATORIA VECTORES EN EL PLANO
-# el programa ecuentra las componentes x y x de un vector 
+# el programa ecuentra las componentes x & y de un vector 
 # en el plano conociendo su magnitud, y el minimo angulo 
 # respecto a un eje de referencia y su sentido de rotacion.
 
